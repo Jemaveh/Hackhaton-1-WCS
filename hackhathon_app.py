@@ -35,21 +35,10 @@ def onglet0():
     st.pyplot(fig)
 
     st.markdown("<h3 style='text-align: center;'>Ingrédient les plus présents dans les recettes</h3>", unsafe_allow_html=True)
-    url1 = 'https://drive.google.com/uc?export=view&id=1fnXQhT2sBwCdUC9bbqP99gnB7rmhK1UA'
-    st.image(url1)
-
-    st.markdown("<h3 style='text-align: center;'>Ingrédient les plus présents sans le top 10</h3>", unsafe_allow_html=True)
-    url3 = 'https://drive.google.com/uc?export=view&id=1OUWnfH8u93wA4DqRhB3dHprafZGs33sd'
-    st.image(url3)
-    
-    #ingredient_counts = Counter(df_recettes['Com_ing_str'])
-    #wordcloud = WordCloud(width=800, height=400, background_color='white',
-                      #relative_scaling=0.5, 
-                      #min_font_size=10).generate_from_frequencies(ingredient_counts)
-    #plt.figure(figsize=(10, 8))
-    #plt.imshow(wordcloud, interpolation='bilinear')
-    #plt.axis("off")
-    #st.pyplot(plt)
+    url1 = 'https://drive.google.com/file/d/1-wM1BZoRO5ZnQVNvuJI271CFZjRcKTiF/view?usp=sharing'
+    file_id = url1.split('/')[-2]
+    new_url1 = f'https://drive.google.com/uc?export=view&id={file_id}'
+    st.image(new_url1)
 
     
 
