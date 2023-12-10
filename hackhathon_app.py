@@ -34,6 +34,7 @@ def onglet0():
     fig.patch.set_facecolor('#02211e')
     st.pyplot(fig)
 
+    
     st.markdown("<h3 style='text-align: center;'>Ingrédient les plus présents dans les recettes</h3>", unsafe_allow_html=True)
     url1 = 'https://drive.google.com/file/d/1-wM1BZoRO5ZnQVNvuJI271CFZjRcKTiF/view?usp=sharing'
     file_id = url1.split('/')[-2]
