@@ -38,7 +38,7 @@ def onglet0():
     url1 = 'https://drive.google.com/file/d/1-wM1BZoRO5ZnQVNvuJI271CFZjRcKTiF/view?usp=sharing'
     file_id = url1.split('/')[-2]
     new_url1 = f'https://drive.google.com/uc?export=view&id={file_id}'
-    st.image(new_url1)
+    st.image(new_url1, width=300, align='center')
 
     
 
